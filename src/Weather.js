@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import ReactAnimatedWeatherUpdated from "react-animated-weather-updated";
+import ReactAnimatedWeather from "react-animated-weather";
 import { SpinnerRoundOutlined } from "spinners-react";
 
 export default function Weather(props) {
@@ -19,7 +19,7 @@ export default function Weather(props) {
 
   return (
     <div>
-      <ReactAnimatedWeatherUpdated
+      <ReactAnimatedWeather
         icon="CLEAR_DAY"
         color="black"
         size={50}
