@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import ReactAnimatedWeatherUpdated from "react-animated-weather-updated";
+import { SpinnerRoundOutlined } from "spinners-react";
 
 export default function Weather(props) {
   function handleResponse(response) {
@@ -23,6 +24,14 @@ export default function Weather(props) {
         color="black"
         size={50}
         animate={true}
+      />
+      <br />
+      <SpinnerRoundOutlined
+        size={100}
+        thickness={100}
+        speed={100}
+        color="#36ad47"
+        secondaryColor="rgba(0, 0, 0, 0.44)"
       />
     </div>
   );
